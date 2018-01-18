@@ -1,0 +1,160 @@
+body {
+	background: #000;
+	font-family: "Helvetica";
+	font-weight: lighter;
+	font-size: 16px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+svg#field {
+	border: 1px dashed rgba(255,255,255,.5);
+}
+
+#mCoords {
+	position: absolute;
+	color: #fff;
+	background: #111;
+	border: 1px solid #009900;
+	padding: 5px 10px;
+}
+
+nav {
+	visibility: hidden;
+	position: fixed;
+	background: #333;
+	z-index: 9999;
+	width: 100%;
+}
+
+nav ul {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	float: left;
+	list-style-type: none;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+	display: block;
+	padding: 6px 20px;
+}
+
+nav a:hover {
+	background-color: #555;
+}
+
+#messages {
+	position: fixed;
+	right: 0;
+	top: 30px;
+	background-color: rgba(0,0,0,.7);
+	z-index: 999;
+	max-height: 100%;
+	width: 325px;
+}
+
+#messages .error, #messages .warning, #messages .success {
+	cursor: pointer;
+	padding: 20px;
+	padding-left: 45px;
+	background-repeat: no-repeat;
+	background-position: left 11px center;
+	background-size: 23px;
+}
+
+#messages .error {
+	color: red;
+	background-image: url('../img/error.png');
+}
+
+#messages .error:hover {
+	background-color: rgba(255,0,0,.1);
+}
+
+#messages .warning {
+	color: yellow;
+	background-image: url('../img/warning.png');
+}
+
+#messages .warning:hover {
+	background-color: rgba(255,255,0,.1);
+}
+
+#messages .success {
+	cursor: default;
+	color: #46A800;
+	background-image: url('../img/success.png');
+}
+
+#context-menu {
+	display: none;
+	border: 1px solid #fff;
+	position: absolute;
+	color: #fff;
+	background-color: rgba(0,0,0,1);
+	z-index:999;
+	width: 300px;
+	padding: 5px;
+}
+
+#context-menu #title {
+	font-size: 14px;
+	color: #bbb;
+	border-bottom: 1px solid #bbb;
+	margin-bottom: 5px;
+}
+
+#context-menu a {
+	cursor:pointer;
+	display: block;
+	padding: 10px 10px;
+	border-bottom: 1px dashed #fff;
+}
+
+#context-menu a:hover {
+	background-color: #222;
+}
+
+#slider {
+
+	margin: 15px;
+	margin-top: 35px;
+}
+
+.ui-slider .ui-slider-handle {
+	width: 14px;
+	height: 13px;
+	top: -1px;
+	margin-left: -8px;
+	background-color: #000;
+}
+
+#context-menu #maxG {
+	margin-top: 10px;
+	position: absolute;	
+	right: 10px;
+}
+
+
+#context-menu #minG {
+	margin-top: 10px;
+	position: absolute;	
+	left: 10px;
+}
+
+#context-menu #realG {
+	display: inline-block;	
+	position: relative;	
+}
+
+.dasharray {
+	stroke-dasharray: 3 1;
+	stroke: rgba(255,255,255,.5);
+}
